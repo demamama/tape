@@ -6,7 +6,7 @@ public class Cube : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
-    void OnCollisionStay(Collision collision)
+    private void OnCollisionStay(Collision collision)
     {
         if(collision.gameObject.TryGetComponent(out Tape tape))
         {
